@@ -7,3 +7,15 @@ const car = {
   country: 'Japan',
   coupe: true,
 };
+
+const {manufacturer, model, country, coupe} = car;
+
+let couper;
+
+if (coupe === true) {
+  couper = 'Yes';
+} else {
+  couper = 'No';
+}
+
+console.log(`Manufaturer is: ${manufacturer}, Model: ${model}, origins: ${country}, can it coupe: ${couper}`);
